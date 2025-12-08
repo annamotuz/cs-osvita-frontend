@@ -23,125 +23,91 @@
     </header>
 
     <main>
-      <aside aria-label="Additional product images">
-        <ul>
-          <li>
+      <section aria-labelledby="featured-product-title">
+        <h2 id="featured-product-title">Featured product</h2>
+
+        <div class="featured-product">
+          <div class="featured-product-images">
             <img
-              src="image1.jpg"
-              alt="Classic IMAJI coffee package minimize photo"
-              width="157"
-              height="164.97"
+              src="images/ProductCard3.png"
+              alt="Cappuccino in promo"
+              width="300"
+              height="476"
             />
-          </li>
 
-          <li>
-            <img
-              src="image2.jpg"
-              alt="Cup of coffee on a green plate"
-              width="157"
-              height="164.97"
-            />
-          </li>
-
-          <li>
-            <img
-              src="image3.jpg"
-              alt="Barista preparing coffee"
-              width="157"
-              height="164.97"
-            />
-          </li>
-
-          <li>
-            <img
-              src="image4.jpg"
-              alt="Chemex coffee brewer with filter"
-              width="157"
-              height="164.97"
-            />
-          </li>
-        </ul>
-      </aside>
-
-      <section>
-        <img
-          src="classic_coffee_main_photo.jpg"
-          alt="Classic IMAJI coffee package"
-          width="468"
-          height="707.89"
-        />
-
-        <nav aria-label="Breadcrumb">
-          <ol>
-            <li><a href="/">Home</a></li>
-            <li><a href="/menu">Menu</a></li>
-            <li aria-current="page">Detail</li>
-          </ol>
-        </nav>
-
-        <div aria-labelledby="product-title">
-          <h1 id="product-title">At Home – Classic</h1>
-
-          <p>
-            <span>$4.00</span>
-            <del>$5.00</del>
-            <span>• Get 20% Off in App</span>
-          </p>
-
-          <h2 id="description-title">Description:</h2>
-
-          <div id="full-description">
-            <p>
-              An all-time favorite blend with citrus fruit character, caramel
-              flavors, and a pleasant faintly floral aroma.
-            </p>
-
-            <p>
-              Locked scent:<br />
-              Excelsco prevents air from entering the packaging with a locked
-              aroma, ensuring the coffee's freshness.
-            </p>
-
-            <p>
-              Storage Way:<br />
-              To maintain the taste of coffee and the freshness of the aroma,
-              store Excelsco coffee in an airtight container.
-            </p>
+            <ul aria-label="Additional product images">
+              <li>
+                <img
+                  src="images/product-1.png"
+                  alt="Cappuccino top view"
+                  width="80"
+                  height="80"
+                />
+              </li>
+              <li>
+                <img
+                  src="images/product-2.png"
+                  alt="Coffee beans close up"
+                  width="80"
+                  height="80"
+                />
+              </li>
+              <li>
+                <img
+                  src="images/product-3.png"
+                  alt="Cup of cappuccino on the table"
+                  width="80"
+                  height="80"
+                />
+              </li>
+            </ul>
           </div>
 
-          <button
-            type="button"
-            aria-expanded="true"
-            aria-controls="full-description"
-            id="read-more-button"
-          >
-            Read less
-          </button>
+          <article class="featured-product-info" aria-labelledby="product-name">
+            <h3 id="product-name">CAPPUCCINO</h3>
+            <h4>Only at Cafe and Delivery</h4>
+
+            <p>
+              <strong>$ 5.00</strong>
+              <span aria-label="Old price">$ 6.00</span>
+            </p>
+
+            <p>Get 20% Off in App</p>
+
+            <p>
+              Enjoy our signature cappuccino with rich espresso, silky milk foam
+              and a light sweetness, perfect for any time of the day.
+            </p>
+          </article>
         </div>
+      </section>
 
-        <div aria-label="Product actions according to card">
-          <button type="button" id="add-to-cart">Add to Cart</button>
+      <section aria-labelledby="products-section-title">
+        <h2 id="products-section-title">Our menu</h2>
 
-          <button
-            type="button"
-            id="decrease"
-            aria-label="Decrease quantity"
-            aria-controls="quantity-value"
-          >
-            –
-          </button>
-
-          <span id="quantity-value" aria-live="polite">1</span>
-
-          <button
-            type="button"
-            id="increase"
-            aria-label="Increase quantity"
-            aria-controls="quantity-value"
-          >
-            +
-          </button>
-        </div>
+        <ul>
+          <li>
+            <article>
+              <h3>Espresso</h3>
+              <p>Strong and rich single shot coffee.</p>
+              <p><strong>$ 3.00</strong></p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Latte</h3>
+              <p>Smooth milk coffee with a gentle taste.</p>
+              <p><strong>$ 4.50</strong></p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Mocha</h3>
+              <p>Chocolate-flavoured coffee for sweet lovers.</p>
+              <p><strong>$ 5.50</strong></p>
+            </article>
+          </li>
+        </ul>
       </section>
     </main>
 
